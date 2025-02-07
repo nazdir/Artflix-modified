@@ -1,0 +1,21 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu,system,basic,detailed">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./positional/help-dpad-updown.png</iconUpDown>
+			<iconLeftRight>./positional/help-dpad-leftright.svg</iconLeftRight>
+			<iconUpDownLeftRight>./positional/help-dpad-updownleftright.svg</iconUpDownLeftRight>
+			<iconA>./positional/help-button-east.svg</iconA>
+			<iconB>./positional/help-button-south.svg</iconB>
+			<iconX>./positional/help-button-north.svg</iconX>
+			<iconY>./positional/help-button-west.svg</iconY>
+			<!-- <iconL>./positional/l.png</iconL> -->
+			<!-- <iconR>./positional/r.png</iconR> -->
+			<!-- <iconStart>./positional/start.png</iconStart> -->
+			<!-- <iconSelect>./positional/select.png</iconSelect> -->
+		</helpsystem>		
+	</view>
+	
+</theme>
