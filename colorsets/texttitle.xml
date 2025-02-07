@@ -1,21 +1,15 @@
 <theme>
-<formatVersion>4</formatVersion>
-
-
-<view name="system">
-	<text name="info2" extra="true">
-		<color>FFFFFF</color>
-		<alignment>left</alignment>
-		<glowColor>00000006</glowColor>
-		<glowOffset>2</glowOffset>
-		<zIndex>42</zIndex>
-      </text>
-	  
-	 <image name="sublogo" extra="true">
-		<zIndex>0</zIndex>
-		<pos>2 2</pos>
-	</image>
-	  
-   </view>
-
+  <formatVersion>4</formatVersion>
+  <customView name="HCoinSpin">
+    <image name="art3" extra="true">
+      <path>./../assets/coinops/coinopstv.png</path>
+      <zIndex>7</zIndex>
+    </image>
+  </customView>
+  <customView name="CoinOps Details">
+    <image name="art3" extra="true">
+      <path>./../assets/coinops/coinopstv.png</path>
+      <zIndex>7</zIndex>
+    </image>
+  </customView>
 </theme>

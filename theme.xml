@@ -7,10 +7,15 @@
   <include subset="music" name="On" displayName="${sysmusic}">./sounds.xml</include>
   <include subset="music" name="Off" displayName="${nomusic}" />
   <include subset="MainBGColor" name="Default" displayName="${default}" />
-  <include subset="MainBGColor" name="Green" displayName="${huegreen}">./colorsets/green.xml</include>
-  <include subset="MainBGColor" name="Red" displayName="${huered}">./colorsets/red.xml</include>
-  <include subset="MainBGColor" name="Blue" displayName="${hueblue}">./colorsets/blue.xml</include>
-  <include subset="MainBGColor" name="Purple" displayName="${huepurple}">./colorsets/purple.xml</include>
+  <include subset="MainBGColor" name="Black">./colorsets/black.xml</include>
+  <include subset="MainBGColor" name="Red">./colorsets/red.xml</include>
+  <include subset="MainBGColor" name="Yellow">./colorsets/yellow.xml</include>
+  <include subset="MainBGColor" name="Green">./colorsets/green.xml</include>
+  <include subset="MainBGColor" name="Cyan">./colorsets/cyan.xml</include>
+  <include subset="MainBGColor" name="Blue">./colorsets/blue.xml</include>
+  <include subset="MainBGColor" name="Purple">./colorsets/purple.xml</include>
+  <include subset="MainBGColor" name="Magenta">./colorsets/magenta.xml</include>
+  <include subset="MainBGColor" name="White">./colorsets/white.xml</include>
   <include subset="shader" name="None" displayName="${none}" />
   <include subset="shader" name="ScanLines">./effects/scanliness.xml</include>
   <include subset="shader" name="Crt">./effects/crtt.xml</include>
