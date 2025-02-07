@@ -1,4 +1,4 @@
 <theme>
-	<formatVersion>7</formatVersion>
-	<include>./../theme.xml</include>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
 </theme>
