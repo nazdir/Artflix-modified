@@ -27,12 +27,15 @@
   <include subset="shader" name="Phosphore +">./effects/phosplus.xml</include>
   <include subset="shader" name="Vertical Scanlines">./effects/scanvert.xml</include>
   <include subset="shader" name="Vertical Fine">./effects/verticalfine.xml</include>
-  <include subset="animcarousel" name="Animated Wheel Carousel" displayName="${animcarou}">./effects/animatedcarousel.xml</include>
-  <include subset="animcarousel" name="Animated Wheel Carousel 2" displayName="${animwcarou}">./effects/animatedwcarousel.xml</include>
-  <include subset="animcarousel" name="Default" displayName="${default}" />
-  <include subset="animbg" name="Animated Background" displayName="${animbg}">./effects/animatedbg2.xml</include>
-  <include subset="animbg" name="Animated Background2" displayName="${animbg2}">./effects/animatedbg.xml</include>
-  <include subset="animbg" name="Default" displayName="${default}" />
+  <!-- <include subset="animcarousel" name="Animated Wheel Carousel" displayName="Shrink Unfocused">./effects/animatedcarousel.xml</include> -->
+  <!-- <include subset="animcarousel" name="Animated Wheel Carousel 2" displayName="Fade Unfocused">./effects/animatedwcarousel.xml</include> -->
+  <!-- <include subset="animcarousel" name="Default" displayName="Static" /> -->
+  <include subset="animcarousel" name="Nazdir">./effects/nazcarousel.xml</include>
+  <!-- <include subset="animbg" name="Animated Background" displayName="On">./effects/animatedbg2.xml</include> -->
+  <!-- <include subset="animbg" name="Animated Background2" displayName="${animbg2}">./effects/animatedbg.xml</include> -->
+  <!-- <include subset="animbg" name="Default" displayName="Off" /> -->
+  <include subset="animbg" name="On">./effects/animatedbg2.xml</include>
+  <include subset="animbg" name="Off" />
   <include subset="iconanim" name="yes" displayName="${yes}" />
   <include subset="iconanim" name="no" displayName="${no}" />
   <include subset="syscarousel" name="Wheel" displayName="${wheel}">./effects/carouselwheel.xml</include>
