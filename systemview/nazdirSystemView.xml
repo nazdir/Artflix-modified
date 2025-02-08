@@ -1,0 +1,143 @@
+<theme>
+  <formatVersion>4</formatVersion>
+  <view name="system">
+    <image name="art" extra="true">
+      <linearSmooth>true</linearSmooth>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <zIndex>1</zIndex>
+    </image>
+    <image name="logo">
+      <path>./../assets/logos/$system.png</path>
+      <path>./../assets/logos/$system.svg</path>
+    </image>
+    <!-- <image name="background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./../assets/overlaycobalto.png</path>
+      <zIndex>41</zIndex>
+      <linearSmooth>true</linearSmooth>
+    </image> -->
+    <video name="md_video" extra="true" ifSubset="randomvid:yes">
+      <path>{random}</path>
+      <pos>0.105 0.695</pos>
+      <maxSize>0.25 0.25</maxSize>
+      <origin>0 0</origin>
+      <delay>2</delay>
+      <effect>slideRight</effect>
+      <roundCorners>0.04</roundCorners>
+      <showSnapshotNoVideo>false</showSnapshotNoVideo>
+      <showSnapshotDelay>false</showSnapshotDelay>
+      <zIndex>50</zIndex>
+      <color>858585FF</color>
+    </video>
+    <text name="info1, info2, info3, info4, systemInfo, systemInfoEx1, systemInfoEx2, systemInfoEx3">
+      <alignment>left</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>2</glowSize>
+      <zIndex>60</zIndex>
+      <size>0.4 0.025</size>
+      <color>FFFFFF</color>
+      <fontPath>./../_inc/fonts/TiltNeon.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <lineSpacing>1</lineSpacing>
+    </text>
+    <text name="info2" extra="true">
+      <verticalAlignment>top</verticalAlignment>
+      <fontSize>0.04</fontSize>
+      <forceUppercase>true</forceUppercase>
+      <size>0.4 .05</size>
+      <pos>0.065 0.1</pos>
+    </text>
+    <text name="info3" extra="true">
+      <size>0.03 .025</size>
+      <pos>0.065 0.15</pos>
+    </text>
+    <text name="info4" extra="true">
+      <color>acb1bc</color>
+      <size>0.37 0.025</size>
+      <pos>0.095 0.15</pos>
+    </text>
+    <text name="info1" extra="true">
+      <size>0.4 .225</size>
+      <pos>0.065 0.175</pos>
+    </text>
+    <text name="info5" extra="true">
+      <pos>2 2</pos>
+    </text>
+    <text name="systemInfo">
+      <pos>0.065 0.4</pos>
+    </text>
+    <text name="systemInfoEx1" extra="true">
+      <text>Favorites: {binding:favorites}</text>
+      <pos>0.065 0.425</pos>
+      <storyboard repeat="1">
+        <animation property="x" to="-1" begin="0" duration="0" />
+        <animation property="x" from="-1" to="0.065" begin="100" duration="250" mode="easeOut" />
+      </storyboard>
+    </text>
+    <text name="systemInfoEx2" extra="true">
+      <text>Games Played: {binding:gamesPlayed}</text>
+      <pos>0.065 0.45</pos>
+      <storyboard repeat="1">
+        <animation property="x" to="-1" begin="0" duration="0" />
+        <animation property="x" from="-1" to="0.065" begin="200" duration="250" mode="easeOut" />
+      </storyboard>
+    </text>
+    <text name="systemInfoEx3" extra="true">
+      <text>Most Played: {binding:mostPlayed}</text>
+      <pos>0.065 0.475</pos>
+      <storyboard repeat="1">
+        <animation property="x" to="-1" begin="0" duration="0" />
+        <animation property="x" from="-1" to="0.065" begin="300" duration="250" mode="easeOut" />
+      </storyboard>
+    </text>
+    <carousel name="systemcarousel">
+      <type>vertical_wheel</type>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <logoScale>1.3</logoScale>
+      <logoSize>0.14 0.14</logoSize>
+      <color>00000000</color>
+      <logoRotation>-6.5</logoRotation>
+      <logoRotationOrigin>5.0 0.3</logoRotationOrigin>
+      <logoAlignment>right</logoAlignment>
+      <maxLogoCount>5</maxLogoCount>
+      <defaultTransition>instant</defaultTransition>
+      <zIndex>75</zIndex>
+      <systemInfoDelay>0</systemInfoDelay>
+      <scrollSound>./../assets/sounds/scroll1A.wav</scrollSound>
+    </carousel>
+    <text name="logoText">
+      <fontPath>./../_inc/fonts/polan.otf</fontPath>
+      <fontSize>0.03</fontSize>
+      <text>${system.fullName}</text>
+      <color>dddddd</color>
+      <glowColor>12121233</glowColor>
+      <forceUppercase>true</forceUppercase>
+    </text>
+    <helpsystem name="help">
+      <fontPath>./../_inc/fonts/Circular Std Book.ttf</fontPath>
+      <fontSize>0.016</fontSize>
+      <pos>0.045 0.955</pos>
+      <textColor>FFFFFF</textColor>
+      <glowColor>00000016</glowColor>
+      <glowSize>2</glowSize>
+    </helpsystem>
+  </view>
+  <view name="screen">
+    <controllerActivity name="controllerActivity">
+      <pos>0.145 0.057</pos>
+      <size>0.065 0.016</size>
+      <!-- <horizontalAlignment>right</horizontalAlignment> -->
+      <itemSpacing>0.003</itemSpacing>
+      <imagePath>./../_inc/gamepad.svg</imagePath>
+      <gunPath>./../_inc/icons/gun.svg</gunPath>
+      <color>FFFFFF80</color>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
+    </controllerActivity>
+  </view>
+</theme>

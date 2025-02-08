@@ -4,7 +4,7 @@
   <include>./colorsets/fullhd.xml</include>
   <!-- <include subset="iconset" name="Nazdir's Icons">./iconsets/positional.xml</include> -->
   <include>./iconsets/positional.xml</include>
-  <include subset="systemview" name="Nazdir">./systemview/naz.xml</include>
+  <include subset="systemview" name="Nazdir">./systemview/nazdirSystemView.xml</include>
   <include subset="systemview" name="Cobalto" displayName="${cobalto}">./systemview/6A.xml</include>
   <include subset="systemview" name="Cobalto - Random Box Background" displayName="${cobaltorandbg}"> ./systemview/6AB.xml </include>
   <include subset="systemview" name="Cobalto - Random Fanart Background" displayName="${cobaltorandbbg}">./systemview/6AC.xml</include>
