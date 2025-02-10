@@ -1,0 +1,11 @@
+<theme>
+  <variables>
+    <systemName>Android Apps</systemName>
+    <systemDescription>View and use your favorite Android Apps.</systemDescription>
+    <systemManufacturer>Various</systemManufacturer>
+    <systemReleaseYear>Various</systemReleaseYear>
+    <systemHardwareType>Folder</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemCartSize>1-1</systemCartSize>
+  </variables>
+</theme>

@@ -1,0 +1,11 @@
+<theme>
+  <variables>
+    <systemName>Last Played</systemName>
+    <systemDescription>View your recently played games across the entire library.</systemDescription>
+    <systemManufacturer>Various</systemManufacturer>
+    <systemReleaseYear>Various</systemReleaseYear>
+    <systemHardwareType>Auto Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemCartSize>1-1</systemCartSize>
+  </variables>
+</theme>

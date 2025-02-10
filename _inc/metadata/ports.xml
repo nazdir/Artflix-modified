@@ -1,0 +1,11 @@
+<theme>
+  <variables>
+    <systemName>Ports</systemName>
+    <systemDescription>View and play all of your favorite game ports.</systemDescription>
+    <systemManufacturer>Various</systemManufacturer>
+    <systemReleaseYear>Various</systemReleaseYear>
+    <systemHardwareType>Folder</systemHardwareType>
+    <systemCoverSize>3-4</systemCoverSize>
+    <systemCartSize>1-1</systemCartSize>
+  </variables>
+</theme>

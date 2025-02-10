@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This component defines the style for status indicators (battery, time, network).
+
+It should be visible from all views and z-rendered above the bottom bar. -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="screen">
+    <!-- <controllerActivity name="controllerActivity"> -->
+    <!-- <visible>false</visible> -->
+    <!-- </controllerActivity> -->
+    <batteryIndicator name="batteryIndicator">
+      <visible>false</visible>
+    </batteryIndicator>
+    <text name="clock">
+      <pos>1 1</pos>
+    </text>
+  </view>
+  <view name="system, basic, detailed, grid">
+    <stackpanel name="status-indicators" extra="true">
+      <h>0.022</h>
+      <w>.995</w>
+      <pos>0 0.97</pos>
+      <origin>0 .5</origin>
+      <separator>0.012</separator>
+      <zIndex>100</zIndex>
+      <orientation>horizontal</orientation>
+      <reverse>true</reverse>
+      <clock name="status-clock" extra="true">
+        <color>FFFFFF</color>
+        <fontSize>0.022</fontSize>
+        <lineSpacing>1</lineSpacing>
+        <fontPath>./_inc/fonts/TiltNeon.ttf</fontPath>
+      </clock>
+      <batteryText name="status-battery-text" extra="true">
+        <color>FFFFFF</color>
+        <fontSize>0.022</fontSize>
+        <lineSpacing>1</lineSpacing>
+        <!-- <fontPath>./_inc/fonts/Gilroy-Regular.ttf</fontPath> -->
+      </batteryText>
+      <batteryIcon name="status-battery-icon" extra="true">
+        <maxSize>1 1</maxSize>
+        <color>FFFFFF</color>
+        <full>./_inc/icons/battery-icon-100.svg</full>
+        <at75>./_inc/icons/battery-icon-75.svg</at75>
+        <at50>./_inc/icons/battery-icon-50.svg</at50>
+        <at25>./_inc/icons/battery-icon-25.svg</at25>
+        <empty>./_inc/icons/battery-icon-0.svg</empty>
+        <incharge>./_inc/icons/battery-icon-charging.svg</incharge>
+      </batteryIcon>
+      <networkIcon name="status-network-icon" extra="true">
+        <maxSize>1 1</maxSize>
+        <color>FFFFFF</color>
+        <networkIcon>./_inc/icons/network-icon-on.svg</networkIcon>
+        <planemodeIcon>./_inc/icons/network-icon-off.svg</planemodeIcon>
+      </networkIcon>
+    </stackpanel>
+    <helpsystem name="help">
+      <fontPath>./_inc/fonts/TiltNeon.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <pos>0.02 0.973</pos>
+      <textColor>FFFFFF</textColor>
+      <glowColor>00000016</glowColor>
+      <glowSize>2</glowSize>
+    </helpsystem>
+  </view>
+  <view name="screen">
+    <controllerActivity name="controllerActivity">
+      <pos>0.916 0.97</pos>
+      <origin>1 0</origin>
+      <size>0.025 0.025</size>
+      <horizontalAlignment>right</horizontalAlignment>
+      <itemSpacing>0.003</itemSpacing>
+      <imagePath>./_inc/gamepad.svg</imagePath>
+      <gunPath>./_inc/icons/gun.svg</gunPath>
+      <color>FFFFFF</color>
+      <activityColor>14d2f6</activityColor>
+      <hotkeyColor>f948be</hotkeyColor>
+      <glowColor>00000016</glowColor>
+      <glowSize>2</glowSize>
+    </controllerActivity>
+  </view>
+</theme>

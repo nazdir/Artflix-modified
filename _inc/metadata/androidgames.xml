@@ -1,0 +1,11 @@
+<theme>
+  <variables>
+    <systemName>Android Games</systemName>
+    <systemDescription>View and play your favorite Android Games.</systemDescription>
+    <systemManufacturer>Various</systemManufacturer>
+    <systemReleaseYear>Various</systemReleaseYear>
+    <systemHardwareType>Folder</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemCartSize>1-1</systemCartSize>
+  </variables>
+</theme>

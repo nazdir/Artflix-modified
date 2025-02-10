@@ -1,0 +1,11 @@
+<theme>
+  <variables>
+    <systemName>Custom Collections</systemName>
+    <systemDescription>Organize your games into custom collections.</systemDescription>
+    <systemManufacturer>Various</systemManufacturer>
+    <systemReleaseYear>Various</systemReleaseYear>
+    <systemHardwareType>Custom Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemCartSize>1-1</systemCartSize>
+  </variables>
+</theme>

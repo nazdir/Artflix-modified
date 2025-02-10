@@ -1,0 +1,11 @@
+<theme>
+  <variables>
+    <systemName>Stratagus</systemName>
+    <systemDescription>Stratagus is a free and open-source cross-platform game engine used to build real-time strategy video games. Licensed under the GNU GPL-2.0-only,[2] it is written mostly in C++ with the configuration language being Lua.</systemDescription>
+    <systemManufacturer>Stratagus Team</systemManufacturer>
+    <systemReleaseYear>1998</systemReleaseYear>
+    <systemHardwareType>Engine</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemCartSize>1-1</systemCartSize>
+  </variables>
+</theme>
