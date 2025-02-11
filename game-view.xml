@@ -197,5 +197,5 @@
       <imageColor>FFFFFFFF</imageColor>
       <backgroundCornerSize>0</backgroundCornerSize>
     </gridtile>
-    <!-- <include>./$system/custom.xml</include> -->
   </customView>
+</theme>
