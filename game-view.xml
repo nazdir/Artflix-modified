@@ -31,14 +31,23 @@
       <maxSize>0.3 0.15</maxSize>
       <zIndex>14</zIndex>
     </image>
-    <!-- <image name="logo">
-      <path>./assets/logos/${system.theme}.png</path>
-      <zIndex>4</zIndex>
-      <pos>0.019 0.15</pos>
-      <origin>0.5 1</origin>
-      <maxSize>0.08 0.08</maxSize>
+    <text name="system-name" extra="true">
+      <text>${systemName}</text>
+      <zIndex>15</zIndex>
+      <pos>0 .4</pos>
+      <origin>.5 0</origin>
+      <rotationOrigin>.5 0</rotationOrigin>
+      <size>.4 0</size>
       <rotation>-90</rotation>
-    </image> -->
+      <fontPath>./_inc/fonts/TiltNeon.ttf</fontPath>
+      <fontSize>0.03</fontSize>
+      <color>${mainColor}99</color>
+      <glowColor>00000020</glowColor>
+      <glowSize>2</glowSize>
+      <alignment>right</alignment>
+      <forceUppercase>true</forceUppercase>
+      <zIndex>10000</zIndex>
+    </text>
     <text name="game-release-info, md_description, game-genre">
       <x>1</x>
       <padding>0.001 0 0.01 0</padding>
@@ -63,8 +72,7 @@
     <image name="md_flag">
       <origin>1 0</origin>
       <pos>1 0.15</pos>
-      <padding>0 0.003 0.01 0</padding>
-      <saturation>0</saturation>
+      <padding>0 0.002 0.01 0</padding>
       <maxSize>0.023 0.023</maxSize>
       <color>FFFFFF</color>
       <zIndex>16</zIndex>
@@ -109,7 +117,7 @@
       <x>.80</x>
       <fontSize>0.03</fontSize>
       <storyboard event="activate">
-        <animation property="opacity" from="0" to="1" duration="350" mode="linear" />
+        <animation property="opacity" from="0" duration="350" mode="linear" />
       </storyboard>
     </text>
     <image name="cheevos" extra="true">
@@ -117,7 +125,7 @@
       <opacity>{game:cheevos} ? 1 : 0.25</opacity>
       <x>.85</x>
       <storyboard event="activate">
-        <animation property="opacity" from="0" to="1" duration="350" mode="linear" />
+        <animation property="opacity" from="0" duration="350" mode="linear" />
       </storyboard>
     </image>
     <image name="savestate" extra="true">
@@ -125,7 +133,7 @@
       <opacity>{game:hasSaveState} ? 1 : 0.25</opacity>
       <x>.9</x>
       <storyboard event="activate">
-        <animation property="opacity" from="0" to="1" duration="350" mode="linear" />
+        <animation property="opacity" from="0" duration="350" mode="linear" />
       </storyboard>
     </image>
     <video name="md_video">
@@ -160,7 +168,7 @@
       <scrollbarColor>808080FF</scrollbarColor>
       <scrollbarCorner>0</scrollbarCorner>
       <scrollbarSize>0.002</scrollbarSize>
-      <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
+      <autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
     </imagegrid>
     <text name="gridtile">
       <visible>false</visible>
@@ -189,6 +197,5 @@
       <imageColor>FFFFFFFF</imageColor>
       <backgroundCornerSize>0</backgroundCornerSize>
     </gridtile>
-    <include>./$system/custom.xml</include>
+    <!-- <include>./$system/custom.xml</include> -->
   </customView>
-</theme>
