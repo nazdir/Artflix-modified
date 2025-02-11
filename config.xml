@@ -1,6 +1,0 @@
-<theme>
-  <formatVersion>7</formatVersion>
-  <include>./colorsets/fullhd.xml</include>
-  <include>./iconsets/positional.xml</include>
-  <include>./system-view.xml</include>
-</theme>

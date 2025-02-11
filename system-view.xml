@@ -1,6 +1,25 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
+    <carousel name="systemcarousel">
+      <type>vertical_wheel</type>
+      <!-- <type>vertical</type> -->
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <logoScale>1.3</logoScale>
+      <logoSize>0.14 0.14</logoSize>
+      <color>00000000</color>
+      <logoRotation>-6.5</logoRotation>
+      <logoRotationOrigin>5.0 0.3</logoRotationOrigin>
+      <logoAlignment>right</logoAlignment>
+      <maxLogoCount>5</maxLogoCount>
+      <defaultTransition>instant</defaultTransition>
+      <zIndex>75</zIndex>
+      <systemInfoDelay>20000</systemInfoDelay>
+      <scrollSound>./assets/sounds/scroll1A.wav</scrollSound>
+      <origin>0 0</origin>
+      <logoSize>0.2 0.2</logoSize>
+    </carousel>
     <image name="art" extra="true">
       <path>./assets/arts/$system.jpg</path>
       <linearSmooth>true</linearSmooth>
@@ -21,11 +40,13 @@
       <zIndex>41</zIndex>
       <linearSmooth>true</linearSmooth>
     </image>
-    <text name="info1, system-name, info3, info4, systemInfo, systemInfoEx1, systemInfoEx2, systemInfoEx3">
+    <text name="system-name, system-release-info, system-desc, systemInfo, system-info-played, system-info-favs, system-info-most">
       <alignment>left</alignment>
       <glowColor>00000016</glowColor>
       <glowSize>2</glowSize>
       <zIndex>60</zIndex>
+      <x>0</x>
+      <padding>0.05 0 0 0</padding>
       <size>0.4 0.02</size>
       <color>FFFFFF</color>
       <fontPath>./_inc/fonts/TiltNeon.ttf</fontPath>
@@ -37,83 +58,64 @@
       <verticalAlignment>bottom</verticalAlignment>
       <fontSize>0.05</fontSize>
       <forceUppercase>true</forceUppercase>
-      <size>0.4 .05</size>
-      <pos>0.065 0.095</pos>
+      <size>0.4 0.05</size>
+      <y>0.095</y>
       <lineSpacing>.8</lineSpacing>
     </text>
-    <text name="info3" extra="true">
-      <size>0.03 .02</size>
-      <pos>0.065 0.15</pos>
+    <text name="system-release-info" extra="true">
+      <text>${systemManufacturer} • ${systemHardwareType} • ${systemReleaseYear}</text>
+      <size>0.4 .02</size>
+      <y>0.15</y>
     </text>
-    <text name="info4" extra="true">
-      <color>acb1bc</color>
-      <size>0.37 0.02</size>
-      <pos>0.095 0.15</pos>
-    </text>
-    <text name="info1" extra="true">
+    <text name="system-desc" extra="true">
+      <text>${systemDescription}</text>
       <verticalAlignment>top</verticalAlignment>
-      <size>0.4 .22</size>
-      <pos>0.065 0.175</pos>
-    </text>
-    <text name="info5" extra="true">
-      <pos>2 2</pos>
+      <size>0.4 0.2</size>
+      <maxSize>0.4 0.2</maxSize>
+      <y>0.175</y>
+      <autoScroll>vertical</autoScroll>
     </text>
     <text name="systemInfo">
-      <pos>0.065 0.4</pos>
+      <y>0.38</y>
     </text>
-    <text name="systemInfoEx1" extra="true">
+    <text name="system-info-played" extra="true">
       <text>PLAYED: {binding:gamesPlayed}</text>
-      <pos>0.065 0.425</pos>
+      <y>0.405</y>
       <storyboard repeat="1">
         <animation property="x" to="-1" begin="0" duration="0" />
-        <animation property="x" from="-1" to="0.065" begin="100" duration="250" mode="easeOut" />
+        <animation property="x" from="-1" to="0" begin="100" duration="250" mode="easeOut" />
       </storyboard>
     </text>
-    <text name="systemInfoEx2" extra="true">
+    <text name="system-info-favs" extra="true">
       <text>FAVORITES: {binding:favorites}</text>
-      <pos>0.065 0.45</pos>
+      <y>0.43</y>
       <storyboard repeat="1">
         <animation property="x" to="-1" begin="0" duration="0" />
-        <animation property="x" from="-1" to="0.065" begin="200" duration="250" mode="easeOut" />
+        <animation property="x" from="-1" to="0" begin="200" duration="250" mode="easeOut" />
       </storyboard>
     </text>
-    <text name="systemInfoEx3" extra="true">
+    <text name="system-info-most" extra="true">
       <text>MOST PLAYED: {binding:mostPlayed}</text>
-      <pos>0.065 0.475</pos>
+      <y>0.455</y>
       <storyboard repeat="1">
         <animation property="x" to="-1" begin="0" duration="0" />
-        <animation property="x" from="-1" to="0.065" begin="300" duration="250" mode="easeOut" />
+        <animation property="x" from="-1" to="0" begin="300" duration="250" mode="easeOut" />
       </storyboard>
     </text>
     <video name="md_video" extra="true" ifSubset="randomvid:yes">
       <path>{random}</path>
-      <pos>0.1 0.55</pos>
-      <maxSize>0.3 0.3</maxSize>
+      <x>0</x>
+      <y>0.49</y>
+      <padding>0.05 0 0 0</padding>
+      <alignment>center</alignment>
+      <maxSize>0.4 0.5</maxSize>
       <origin>0 0</origin>
       <delay>2</delay>
-      <effect>slideRight</effect>
+      <effect>none</effect>
       <roundCorners>0.025</roundCorners>
-      <showSnapshotNoVideo>false</showSnapshotNoVideo>
-      <showSnapshotDelay>false</showSnapshotDelay>
       <zIndex>50</zIndex>
-      <color>858585FF</color>
+      <color>858585CC</color>
     </video>
-    <carousel name="systemcarousel">
-      <type>vertical_wheel</type>
-      <pos>0 0</pos>
-      <size>1 1</size>
-      <logoScale>1.3</logoScale>
-      <logoSize>0.14 0.14</logoSize>
-      <color>00000000</color>
-      <logoRotation>-6.5</logoRotation>
-      <logoRotationOrigin>5.0 0.3</logoRotationOrigin>
-      <logoAlignment>right</logoAlignment>
-      <maxLogoCount>5</maxLogoCount>
-      <defaultTransition>instant</defaultTransition>
-      <zIndex>75</zIndex>
-      <systemInfoDelay>0</systemInfoDelay>
-      <scrollSound>./assets/sounds/scroll1A.wav</scrollSound>
-    </carousel>
     <text name="logoText">
       <fontPath>./_inc/fonts/polan.otf</fontPath>
       <fontSize>0.03</fontSize>
@@ -122,13 +124,5 @@
       <glowColor>12121233</glowColor>
       <forceUppercase>true</forceUppercase>
     </text>
-    <!-- <helpsystem name="help">
-      <fontPath>./_inc/fonts/TiltNeon.ttf</fontPath>
-      <fontSize>0.02</fontSize>
-      <pos>0.02 0.97</pos>
-      <textColor>FFFFFF</textColor>
-      <glowColor>00000016</glowColor>
-      <glowSize>2</glowSize>
-    </helpsystem> -->
   </view>
 </theme>

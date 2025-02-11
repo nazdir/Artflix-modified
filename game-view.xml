@@ -8,12 +8,6 @@
       <origin>0 0</origin>
       <zIndex>4</zIndex>
     </image>
-    <helpsystem name="help">
-      <fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
-      <fontSize>0.017</fontSize>
-      <pos>0.02 0.955</pos>
-      <textColor>FFFFFF</textColor>
-    </helpsystem>
     <!-- <image name="md_image">
       <tile>true</tile>
       <pos>0 0</pos>
@@ -73,7 +67,7 @@
     </gridtile>
     <gridtile name="selected">
       <backgroundCenterColor>000000</backgroundCenterColor>
-      <backgroundEdgeColor>14D2F6</backgroundEdgeColor>
+      <backgroundEdgeColor>${mainColor}</backgroundEdgeColor>
       <imageColor>FFFFFFFF</imageColor>
     </gridtile>
     <text name="gridtile">
@@ -296,7 +290,7 @@
     </image>
     <image name="gridtile.favorite:selected">
       <path>./_inc/gridfav.png</path>
-      <color>14d2f6</color>
+      <color>${mainColor}</color>
     </image>
     <gridtile name="selected">
       <backgroundCornerSize>0</backgroundCornerSize>

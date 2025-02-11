@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="Custom">
   <formatVersion>7</formatVersion>
-  <!-- <include>./config.xml</include> -->
-  <include>./iconsets/positional.xml</include>
-  <include>./system-view.xml</include>
-  <include>./options.xml</include>
+  <include>./_inc/metadata/_builtin.xml</include>
+  <include>./_inc/metadata/${system.theme}.xml</include>
   <variables>
+    <mainColor>14d2f6</mainColor>
+    <secondaryColor>f948be</secondaryColor>
     <subset.MainBGColor>Background Color</subset.MainBGColor>
-    <subset.CoinOpsDefault>CoinOps Default System</subset.CoinOpsDefault>
-    <subset.tveffect>TV Effect CoinOps View</subset.tveffect>
-    <subset.ShowTopMarquee>Show Top Marquee in CoinOps Views</subset.ShowTopMarquee>
-    <subset.syscarousel>System Carousel</subset.syscarousel>
-    <subset.sysname>System name on System view</subset.sysname>
     <theme.mostplayed>Most Played:</theme.mostplayed>
     <GamesNumber>Games</GamesNumber>
     <GamesFavs>Favorites</GamesFavs>
     <NumberPlayed>Games Played</NumberPlayed>
-    <!-- <subset.showfrontend>Show Frontend on Cobalto View</subset.showfrontend> -->
     <forcebatocera>Show only Batocera</forcebatocera>
     <subset.randomvid>Random Video</subset.randomvid>
     <subset.animcarousel>Animated Wheel Carousel</subset.animcarousel>
     <subset.animbg>Animated Background</subset.animbg>
     <subset.iconanim>Cobalto View Icons Animation</subset.iconanim>
   </variables>
-  <include>./_inc/metadata/_builtin.xml</include>
-  <include>./_inc/metadata/${system.theme}.xml</include>
   <feature supported="carousel">
     <view name="system">
       <sound name="bgsound" />
     </view>
   </feature>
+  <include>./system-view.xml</include>
   <include>./menu-view.xml</include>
   <include>./game-view.xml</include>
   <include>./bottom-bar.xml</include>
+  <include>./options.xml</include>
+  <include>./effects/carousel.xml</include>
 </theme>

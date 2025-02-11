@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="Custom">
   <formatVersion>7</formatVersion>
-  <!-- <include>./config.xml</include> -->
   <include subset="music" name="Mute" displayName="${silence}">./nosounds.xml</include>
   <include subset="music" name="On" displayName="${sysmusic}">./sounds.xml</include>
   <include subset="music" name="Off" displayName="${nomusic}" />
   <include subset="MainBGColor" name="Default" />
+  <include subset="MainBGColor" name="Cyan">./colorsets/primary.xml</include>
+  <include subset="MainBGColor" name="Magenta">./colorsets/secondary.xml</include>
   <include subset="MainBGColor" name="Black">./colorsets/black.xml</include>
   <include subset="MainBGColor" name="Black 2">./colorsets/black2.xml</include>
   <include subset="MainBGColor" name="Black 3">./colorsets/black3.xml</include>
   <include subset="MainBGColor" name="Blue">./colorsets/blue.xml</include>
-  <include subset="MainBGColor" name="Cyan">./colorsets/cyan.xml</include>
-  <include subset="MainBGColor" name="Green">./colorsets/green.xml</include>
-  <include subset="MainBGColor" name="Green">./colorsets/green.xml</include>
-  <include subset="MainBGColor" name="Magenta">./colorsets/magenta.xml</include>
-  <include subset="MainBGColor" name="Purple">./colorsets/purple.xml</include>
   <include subset="MainBGColor" name="Red">./colorsets/red.xml</include>
   <include subset="MainBGColor" name="White">./colorsets/white.xml</include>
-  <include subset="MainBGColor" name="Yellow">./colorsets/yellow.xml</include>
   <include subset="shader" name="None" />
   <include subset="shader" name="ScanLines">./effects/scanliness.xml</include>
   <include subset="shader" name="Crt">./effects/crtt.xml</include>
@@ -26,15 +21,10 @@
   <include subset="shader" name="Phosphore +">./effects/phosplus.xml</include>
   <include subset="shader" name="Vertical Scanlines">./effects/scanvert.xml</include>
   <include subset="shader" name="Vertical Fine">./effects/verticalfine.xml</include>
-  <include>./effects/carousel.xml</include>
+  <!-- <include>./effects/carousel.xml</include> -->
   <include subset="animbg" name="On">./effects/animatedbg2.xml</include>
   <include subset="animbg" name="Off" />
-  <include subset="iconanim" name="yes" displayName="On" />
-  <include subset="iconanim" name="no" displayName="Off" />
-  <include>./effects/carouselvert.xml</include>
-  <include subset="sysname" name="Text">./colorsets/texttitle.xml</include>
-  <include subset="sysname" name="Logo">./colorsets/logotitle.xml</include>
-  <include subset="sysname" name="Without" displayName="None">./colorsets/wtitle.xml</include>
+  <!-- <include>./effects/carouselvert.xml</include> -->
   <include subset="randomvid" name="yes" displayName="On" />
   <include subset="randomvid" name="no" displayName="Off" />
   <include subset="shader" name="Crt Full Screen" displayName="${scrtfs}">./effects/crt.xml</include>

@@ -2,7 +2,7 @@
   <formatVersion>4</formatVersion>
   <view name="system">
     <image name="hue" extra="true">
-      <color>f948be</color>
+      <color>${mainColor}</color>
       <origin>0 0</origin>
       <pos>0 0</pos>
       <size>1 1</size>

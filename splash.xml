@@ -14,7 +14,7 @@
       <glowOffset>2</glowOffset>
     </text>
     <image name="progressbar:active">
-      <color>14d2f6</color>
+      <color>${mainColor}</color>
     </image>
   </view>
 </theme>
