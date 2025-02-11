@@ -21,10 +21,8 @@
   <include subset="shader" name="Phosphore +">./effects/phosplus.xml</include>
   <include subset="shader" name="Vertical Scanlines">./effects/scanvert.xml</include>
   <include subset="shader" name="Vertical Fine">./effects/verticalfine.xml</include>
-  <!-- <include>./effects/carousel.xml</include> -->
   <include subset="animbg" name="On">./effects/animatedbg2.xml</include>
   <include subset="animbg" name="Off" />
-  <!-- <include>./effects/carouselvert.xml</include> -->
   <include subset="randomvid" name="yes" displayName="On" />
   <include subset="randomvid" name="no" displayName="Off" />
   <include subset="shader" name="Crt Full Screen" displayName="${scrtfs}">./effects/crt.xml</include>

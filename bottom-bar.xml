@@ -16,7 +16,7 @@
       <pos>0 0.97</pos>
       <origin>0 .5</origin>
       <separator>0.012</separator>
-      <zIndex>100</zIndex>
+      <zIndex>1000</zIndex>
       <orientation>horizontal</orientation>
       <reverse>true</reverse>
       <clock name="status-clock" extra="true">
