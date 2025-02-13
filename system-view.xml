@@ -39,7 +39,7 @@
       <zIndex>41</zIndex>
       <linearSmooth>true</linearSmooth>
     </image>
-    <text name="system-name, system-release-info, system-desc, systemInfo, system-info-played, system-info-favs, system-info-most">
+    <text name="system-name, system-release-info, system-desc, system-games, system-info-played, system-info-favs, system-info-most">
       <alignment>left</alignment>
       <glowColor>00000016</glowColor>
       <glowSize>2</glowSize>
@@ -75,14 +75,22 @@
       <autoScroll>vertical</autoScroll>
     </text>
     <text name="systemInfo">
+      <visible>false</visible>
+    </text>
+    <text name="system-games" extra="true">
+      <text>GAMES: {system:total}</text>
       <y>0.38</y>
+      <storyboard repeat="1">
+        <animation property="x" to="-1" begin="0" duration="0" />
+        <animation property="x" from="-1" to="0" begin="100" duration="250" mode="easeOut" />
+      </storyboard>
     </text>
     <text name="system-info-played" extra="true">
       <text>PLAYED: {binding:gamesPlayed}</text>
       <y>0.405</y>
       <storyboard repeat="1">
         <animation property="x" to="-1" begin="0" duration="0" />
-        <animation property="x" from="-1" to="0" begin="100" duration="250" mode="easeOut" />
+        <animation property="x" from="-1" to="0" begin="200" duration="250" mode="easeOut" />
       </storyboard>
     </text>
     <text name="system-info-favs" extra="true">
@@ -90,7 +98,7 @@
       <y>0.43</y>
       <storyboard repeat="1">
         <animation property="x" to="-1" begin="0" duration="0" />
-        <animation property="x" from="-1" to="0" begin="200" duration="250" mode="easeOut" />
+        <animation property="x" from="-1" to="0" begin="300" duration="250" mode="easeOut" />
       </storyboard>
     </text>
     <text name="system-info-most" extra="true">
@@ -98,7 +106,7 @@
       <y>0.455</y>
       <storyboard repeat="1">
         <animation property="x" to="-1" begin="0" duration="0" />
-        <animation property="x" from="-1" to="0" begin="300" duration="250" mode="easeOut" />
+        <animation property="x" from="-1" to="0" begin="400" duration="250" mode="easeOut" />
       </storyboard>
     </text>
     <video name="video" extra="true" ifSubset="randomvid:yes">
