@@ -30,6 +30,9 @@
       <origin>0.5 0</origin>
       <maxSize>0.3 0.15</maxSize>
       <zIndex>14</zIndex>
+      <storyboard event="activate">
+        <animation property="opacity" from="0" duration="100" mode="linear" />
+      </storyboard>
     </image>
     <text name="system-name" extra="true">
       <text>${systemName}</text>
@@ -61,21 +64,28 @@
       <lineSpacing>1</lineSpacing>
       <fontPath>./_inc/fonts/TiltNeon.ttf</fontPath>
       <zIndex>15</zIndex>
+      <storyboard event="activate">
+        <animation property="opacity" from="0" duration="100" mode="linear" />
+      </storyboard>
     </text>
     <text name="game-release-info" extra="true">
       <color>${mainColor}</color>
-      <text>{game:developer} • {game:publisher} • {game:releaseyear} • {game:region}</text>
+      <text>{game:developer} • {game:publisher} • {game:releaseyear} • ---</text>
       <size>0.4 0</size>
       <y>0.15</y>
       <origin>1 0</origin>
     </text>
-    <image name="md_flag">
+    <image name="flag" extra="true">
+      <path>./assets/flags/{game:region}.png</path>
       <origin>1 0</origin>
       <pos>1 0.15</pos>
       <padding>0 0.002 0.01 0</padding>
       <maxSize>0.023 0.023</maxSize>
       <color>FFFFFF</color>
       <zIndex>16</zIndex>
+      <storyboard event="activate">
+        <animation property="opacity" from="0" duration="100" mode="linear" />
+      </storyboard>
     </image>
     <text name="game-genre" extra="true">
       <color>${secondaryColor}</color>
@@ -110,6 +120,9 @@
       <unfilledColor>FFFFFF</unfilledColor>
       <horizontalAlignment>left</horizontalAlignment>
       <zIndex>15</zIndex>
+      <storyboard event="activate">
+        <animation property="opacity" from="0" duration="100" mode="linear" />
+      </storyboard>
     </rating>
     <text name="players" extra="true">
       <fontPath>./_inc/fonts/players.ttf</fontPath>
@@ -117,7 +130,7 @@
       <x>.80</x>
       <fontSize>0.03</fontSize>
       <storyboard event="activate">
-        <animation property="opacity" from="0" duration="350" mode="linear" />
+        <animation property="opacity" from="0" duration="100" mode="linear" />
       </storyboard>
     </text>
     <image name="cheevos" extra="true">
@@ -125,7 +138,7 @@
       <opacity>{game:cheevos} ? 1 : 0.25</opacity>
       <x>.85</x>
       <storyboard event="activate">
-        <animation property="opacity" from="0" duration="350" mode="linear" />
+        <animation property="opacity" from="0" duration="100" mode="linear" />
       </storyboard>
     </image>
     <image name="savestate" extra="true">
@@ -133,7 +146,7 @@
       <opacity>{game:hasSaveState} ? 1 : 0.25</opacity>
       <x>.9</x>
       <storyboard event="activate">
-        <animation property="opacity" from="0" duration="350" mode="linear" />
+        <animation property="opacity" from="0" duration="100" mode="linear" />
       </storyboard>
     </image>
     <video name="md_video">
@@ -146,6 +159,9 @@
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
       <snapshotSource>image</snapshotSource>
+      <storyboard event="activate">
+        <animation property="opacity" from="0" duration="100" mode="linear" />
+      </storyboard>
     </video>
     <image name="md_fanart">
       <linearSmooth>true</linearSmooth>

@@ -102,12 +102,12 @@
       </storyboard>
     </text>
     <video name="video" extra="true" ifSubset="randomvid:yes">
-      <path>{random}</path>
+      <path>./assets/videos/$system.mp4</path>
       <x>0</x>
       <y>0.49</y>
       <padding>0.05 0 0 0</padding>
       <alignment>center</alignment>
-      <maxSize>0.4 0.5</maxSize>
+      <maxSize>0.4 0.465</maxSize>
       <origin>0 0</origin>
       <delay>2</delay>
       <effect>none</effect>
