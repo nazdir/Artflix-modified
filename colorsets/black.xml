@@ -6,7 +6,7 @@
       <origin>0 0</origin>
       <pos>0 0</pos>
       <size>1 1</size>
-      <path>./../assets/overlayblack.png</path>
+      <path>./../assets/overlayblack3.png</path>
       <zIndex>40</zIndex>
     </image>
   </view>
