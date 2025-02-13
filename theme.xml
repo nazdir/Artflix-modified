@@ -3,20 +3,7 @@
   <formatVersion>7</formatVersion>
   <include>./_inc/metadata/_builtin.xml</include>
   <include>./_inc/metadata/${system.theme}.xml</include>
-  <variables>
-    <mainColor>14d2f6</mainColor>
-    <secondaryColor>f948be</secondaryColor>
-    <subset.MainBGColor>Background Color</subset.MainBGColor>
-    <theme.mostplayed>Most Played:</theme.mostplayed>
-    <GamesNumber>Games</GamesNumber>
-    <GamesFavs>Favorites</GamesFavs>
-    <NumberPlayed>Games Played</NumberPlayed>
-    <forcebatocera>Show only Batocera</forcebatocera>
-    <subset.randomvid>Random Video</subset.randomvid>
-    <subset.animcarousel>Animated Wheel Carousel</subset.animcarousel>
-    <subset.animbg>Animated Background</subset.animbg>
-    <subset.iconanim>Cobalto View Icons Animation</subset.iconanim>
-  </variables>
+  <include>./variables.xml</include>
   <feature supported="carousel">
     <view name="system">
       <sound name="bgsound" />
