@@ -12,5 +12,4 @@
     <systemCoverSize>143-207</systemCoverSize>
     <systemCartSize>112-67</systemCartSize>
   </variables>
-  <include>./sega32xna.xml</include>
 </theme>

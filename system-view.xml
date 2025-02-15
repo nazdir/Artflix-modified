@@ -20,7 +20,7 @@
       <logoSize>0.2 0.2</logoSize>
     </carousel>
     <image name="art" extra="true">
-      <path>./assets/arts/$system.jpg</path>
+      <path>./assets/arts/${system.theme}.jpg</path>
       <linearSmooth>true</linearSmooth>
       <size>1 1</size>
       <pos>0 0</pos>
@@ -28,8 +28,7 @@
       <zIndex>1</zIndex>
     </image>
     <image name="logo">
-      <path>./assets/logos/$system.png</path>
-      <path>./assets/logos/$system.svg</path>
+      <path>./assets/logos/${system.theme}.png</path>
     </image>
     <image name="background" extra="true">
       <origin>0 0</origin>
@@ -110,7 +109,7 @@
       </storyboard>
     </text>
     <video name="video" extra="true" ifSubset="randomvid:yes">
-      <path>./assets/videos/$system.mp4</path>
+      <path>./assets/videos/${system.theme}.mp4</path>
       <x>0</x>
       <y>0.49</y>
       <padding>0.05 0 0 0</padding>

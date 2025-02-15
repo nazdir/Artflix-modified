@@ -8,5 +8,4 @@
     <systemCoverSize>243-340</systemCoverSize>
     <systemCartSize>112-67</systemCartSize>
   </variables>
-  <include>./genesis.xml</include>
 </theme>

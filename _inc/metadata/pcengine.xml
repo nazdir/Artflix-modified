@@ -12,5 +12,4 @@
     <systemCoverSize>1-1</systemCoverSize>
     <systemCartSize>3-5</systemCartSize>
   </variables>
-  <include>./tg16.xml</include>
 </theme>
