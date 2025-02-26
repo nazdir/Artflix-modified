@@ -234,15 +234,15 @@
   </customView>
   <customView name="Carousel 2.0" inherits="grid">
     <image name="md_fanart">
-      <!-- <color>606060FF</color> -->
-      <!-- <colorEnd>000000FF</colorEnd> -->
+      <color>FFFFFF</color>
+      <colorEnd>FFFFFF</colorEnd>
       <gradientType>horizontal</gradientType>
     </image>
     <imagegrid name="gamegrid">
       <padding>0.02 0 0.02 0</padding>
       <pos>-0.70 .45</pos>
       <size>1.75 .55</size>
-      <origin>0.5 1</origin>
+      <origin>0.5 0.5</origin>
       <scrollDirection>horizontal</scrollDirection>
       <autoLayout>13 1</autoLayout>
       <margin>.002 0</margin>
@@ -259,4 +259,28 @@
       <reflexion>0.3 0.0</reflexion>
     </gridtile>
     <gridtile name="selected">
-      
+      <!-- <backgroundCenterColor>00000000</backgroundCenterColor> -->
+      <!-- <backgroundEdgeColor>00000000</backgroundEdgeColor> -->
+    </gridtile>
+    <video name="md_video">
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <roundCorners>0.025</roundCorners>
+      <showSnapshotNoVideo>false</showSnapshotNoVideo>
+      <showSnapshotDelay>false</showSnapshotDelay>
+      <delay>10</delay>
+      <zIndex>4</zIndex>
+    </video>
+    <image name="blacken" extra="true">
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <color>000000cc</color>
+      <colorEnd>00000000</colorEnd>
+      <gradientType>horizontal</gradientType>
+      <zIndex>50</zIndex>
+      <path>./assets/solid.png</path>
+    </image>
+  </customView>
+</theme>
