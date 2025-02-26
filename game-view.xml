@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <view name="grid" />
-  <customView name="Custom" inherits="grid">
+  <view name="basic" />
+  <view name="detailed" />
+  <view name="grid">
     <image name="art" extra="true">
       <color>606066FF</color>
       <color>606066FF</color>
@@ -174,8 +175,49 @@
       <gradientType>horizontal</gradientType>
     </image>
     <imagegrid name="gamegrid">
-      <margin>0.005 0.010</margin>
       <animateSelection>false</animateSelection>
+      <scrollSound>./assets/sounds/scroll01.wav</scrollSound>
+      <scrollbarColor>808080FF</scrollbarColor>
+      <scrollbarCorner>0</scrollbarCorner>
+      <scrollbarSize>0.002</scrollbarSize>
+      <autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
+      <imageSource>thumbnail</imageSource>
+    </imagegrid>
+    <gridtile name="default">
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <backgroundCornerSize>9 9</backgroundCornerSize>
+      <selectionMode>image</selectionMode>
+      <padding>5 5</padding>
+      <cornerSize>0</cornerSize>
+      <imageColor>FFFFFF66</imageColor>
+      <storyboard>
+        <animation property="opacity" from="1" to="0" duration="100" mode="linear" />
+      </storyboard>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>000000</backgroundCenterColor>
+      <backgroundEdgeColor>${mainColor}</backgroundEdgeColor>
+      <imageColor>FFFFFFFF</imageColor>
+      <backgroundCornerSize>0</backgroundCornerSize>
+    </gridtile>
+    <image name="gridtile.favorite">
+      <path>./_inc/gridfav.png</path>
+      <pos>1 0</pos>
+      <maxSize>0.25 0.25</maxSize>
+      <origin>1 0</origin>
+      <color>A0A0A0A0</color>
+    </image>
+    <image name="gridtile.favorite:selected">
+      <path>./_inc/gridfav.png</path>
+      <color>${mainColor}</color>
+    </image>
+    <text name="gridtile">
+      <visible>false</visible>
+    </text>
+  </view>
+  <customView name="Grid 2.0" inherits="grid">
+    <imagegrid name="gamegrid">
+      <margin>0.005 0.010</margin>
       <pos>0 0</pos>
       <padding>0.03 0.05 0.03 0.1</padding>
       <size>0.7 1</size>
@@ -188,41 +230,33 @@
       <autoLayout if="${systemCoverSize} == '143-207">5 3</autoLayout>
       <autoLayout if="${systemCoverSize} == '145-205">5 3</autoLayout>
       <autoLayout if="${systemCoverSize} == '373-436">4 3</autoLayout>
-      <scrollSound>./assets/sounds/scroll01.wav</scrollSound>
-      <scrollbarColor>808080FF</scrollbarColor>
-      <scrollbarCorner>0</scrollbarCorner>
-      <scrollbarSize>0.002</scrollbarSize>
-      <autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
     </imagegrid>
-    <text name="gridtile">
-      <visible>false</visible>
-    </text>
-    <image name="gridtile.favorite">
-      <path>./_inc/gridfav.png</path>
-      <pos>1 0</pos>
-      <maxSize>0.25 0.25</maxSize>
-      <origin>1 0</origin>
-      <color>A0A0A0A0</color>
+  </customView>
+  <customView name="Carousel 2.0" inherits="grid">
+    <image name="md_fanart">
+      <!-- <color>606060FF</color> -->
+      <!-- <colorEnd>000000FF</colorEnd> -->
+      <gradientType>horizontal</gradientType>
     </image>
-    <image name="gridtile.favorite:selected">
-      <path>./_inc/gridfav.png</path>
-      <color>${mainColor}</color>
-    </image>
+    <imagegrid name="gamegrid">
+      <padding>0.02 0 0.02 0</padding>
+      <pos>-0.70 .45</pos>
+      <size>1.75 .55</size>
+      <origin>0.5 1</origin>
+      <scrollDirection>horizontal</scrollDirection>
+      <autoLayout>13 1</autoLayout>
+      <margin>.002 0</margin>
+      <autoLayoutSelectedZoom>1.72</autoLayoutSelectedZoom>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+      <zIndex>61</zIndex>
+    </imagegrid>
     <gridtile name="default">
-      <backgroundColor>FFFFFF00</backgroundColor>
-      <backgroundCornerSize>9 9</backgroundCornerSize>
+      <origin>0 1</origin>
       <selectionMode>image</selectionMode>
-      <padding>5 5</padding>
-      <imageColor>FFFFFF66</imageColor>
-      <storyboard>
-        <animation property="opacity" from="1" to="0" duration="100" mode="linear" />
-      </storyboard>
+      <padding>0 0</padding>
+      <imageSizeMode>maxSize</imageSizeMode>
+      <reflexion>0.3 0.0</reflexion>
     </gridtile>
     <gridtile name="selected">
-      <backgroundCenterColor>000000</backgroundCenterColor>
-      <backgroundEdgeColor>${mainColor}</backgroundEdgeColor>
-      <imageColor>FFFFFFFF</imageColor>
-      <backgroundCornerSize>0</backgroundCornerSize>
-    </gridtile>
-  </customView>
-</theme>
+      
